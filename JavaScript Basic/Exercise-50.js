@@ -1,0 +1,42 @@
+Write a JavaScript program to capitalize the first letter of each word of a given string.
+
+
+
+
+function capital_letter(str) 
+{
+    str = str.split(" ");
+
+    for (var i = 0, x = str.length; i < x; i++) {
+        str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+    }
+
+    return str.join(" ");
+}
+
+console.log(capital_letter("Write a JavaScript program to capitalize the first letter of each word of a given string."));
+
+
+
+
+Sample Output:
+
+Write A JavaScript Program To Capitalize The First Letter Of Each Word Of A Given String.
+
+
+
+
+ES6 Version:
+
+function capital_letter(str) 
+{
+    str = str.split(" ");
+
+    for (let i = 0, x = str.length; i < x; i++) {
+        str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+    }
+
+    return str.join(" ");
+}
+
+console.log(capital_letter("Write a JavaScript program to capitalize the first letter of each word of a given string."));
